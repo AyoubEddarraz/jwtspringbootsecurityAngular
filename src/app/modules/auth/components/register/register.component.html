@@ -1,0 +1,17 @@
+<div class="register w-50 bg-white shadow-sm p-5 mx-auto my-5 rounded text-center">
+
+  <h2>Register</h2>
+
+  <form [formGroup]="registerForm">
+
+    <input type="text" class="form-control my-3" placeholder="mary" name="firstName" id="firstName" formControlName="firstName" required="">
+    <input type="text" class="form-control my-3" placeholder="john" name="lastName" id="lastName" formControlName="lastName" required="">
+    <input type="email" class="form-control my-3" placeholder="john@mail.com" name="email" id="email" formControlName="email" required="">
+    <input type="password" class="form-control my-3" placeholder="********" name="password" id="password" formControlName="password" required="">
+
+    <button mat-raised-button class="w-100" color="primary" [disabled]="!registerForm.valid" (click)="register()">register</button>
+
+  </form>
+
+
+</div>

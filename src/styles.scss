@@ -1,1 +1,23 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import "~bootstrap/dist/css/bootstrap.min.css";
+@import "~@fortawesome/fontawesome-free/css/all.min.css";
+
+body{
+  width: 100%;
+  height: auto;
+  overflow: hidden auto;
+  background-color: #ecf0f1;
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+
+button, input{
+  height: 45px;
+}
